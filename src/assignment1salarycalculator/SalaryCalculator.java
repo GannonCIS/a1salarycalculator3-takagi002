@@ -29,8 +29,14 @@ public class SalaryCalculator {
         System.out.println("Salary: $" + s);
     }
     
-    public double calcTaxes(int perc){
-        
+    public void calcTaxes(int tempPerc, double salary){
+        double percIncome = (100 - tempPerc)*.01*salary;
+        double perc = tempPerc*.01;
+        double taxes = salary*perc;
+        String pI = df.format(percIncome);
+        String t = df.format(taxes);
+        System.out.println("How much you're paying in taxes: $" + t);
+        System.out.println("How much you make after tax $:" + pI);
     }
     
     public double monthlyAfterTax(int salary, double perc){

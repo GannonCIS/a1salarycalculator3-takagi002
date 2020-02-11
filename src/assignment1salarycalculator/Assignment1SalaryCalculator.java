@@ -19,6 +19,7 @@ public class Assignment1SalaryCalculator {
         
         sc.calcHourlyWage(30000);
         sc.calcSalary(14);
+        sc.calcTaxes(20, 50760.76);
     }
     
 }
