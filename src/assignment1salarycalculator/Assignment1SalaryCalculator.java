@@ -15,7 +15,9 @@ public class Assignment1SalaryCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SalaryCalculator sc = new SalaryCalculator();
+        
+        sc.calcHourlyWage(30000);
     }
     
 }

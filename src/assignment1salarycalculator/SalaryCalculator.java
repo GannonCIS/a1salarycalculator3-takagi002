@@ -5,6 +5,8 @@
  */
 package assignment1salarycalculator;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author julia
@@ -13,8 +15,12 @@ public class SalaryCalculator {
     
     public void SalaryCalculator(){}
     
-    public double calcHourlyWage(int salary){
-        
+    public void calcHourlyWage(double salary){
+        double hourlyWage = salary/2080;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String hW = df.format(hourlyWage);
+        System.out.println("Hourly wage: $" + hW);
+              
     }
     
     public double calcSalary(int hourlyWage){
