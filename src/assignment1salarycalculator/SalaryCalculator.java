@@ -12,19 +12,21 @@ import java.text.DecimalFormat;
  * @author julia
  */
 public class SalaryCalculator {
+    DecimalFormat df = new DecimalFormat("#.##");
     
     public void SalaryCalculator(){}
     
     public void calcHourlyWage(double salary){
         double hourlyWage = salary/2080;
-        DecimalFormat df = new DecimalFormat("#.##");
         String hW = df.format(hourlyWage);
         System.out.println("Hourly wage: $" + hW);
               
     }
     
-    public double calcSalary(int hourlyWage){
-        
+    public void calcSalary(double hourlyWage){
+        double salary = hourlyWage*2080;
+        String s = df.format(salary);
+        System.out.println("Salary: $" + s);
     }
     
     public double calcTaxes(int perc){

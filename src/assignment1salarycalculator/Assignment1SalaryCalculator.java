@@ -18,6 +18,7 @@ public class Assignment1SalaryCalculator {
         SalaryCalculator sc = new SalaryCalculator();
         
         sc.calcHourlyWage(30000);
+        sc.calcSalary(14);
     }
     
 }
